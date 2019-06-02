@@ -1,6 +1,7 @@
 import discord
 import asyncio
 import openpyxl
+import os
 
 client = discord.Client()
 
@@ -89,6 +90,6 @@ async def on_member_remove(member):
 
 
 
-
-client.run("NTY1MTQwMjM2Mzc2NzM1NzQ0.XOjxbQ.Yp_K5QPpAatzfy3w6gglBnQI7Fs")
+eccess_token = os.environ["BOT_TOKEN"]
+client.run(eccess_token)
 
