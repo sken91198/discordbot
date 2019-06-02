@@ -45,6 +45,7 @@ async def on_message(message):
         await client.send_message(message.channel, '두눈으로 직접 봐')
     if message.content.startswith('킹갓'):
         await client.send_message(message.channel, '빠루')
+        
     if "시발" in message.content:
         file = openxl.load_workbook("경고.xlsx")
         sheet = file.active
