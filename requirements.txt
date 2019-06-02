@@ -1,0 +1,3 @@
+discord.py==3.0.4
+asyncio.py==3.4.3
+openpyxl.py==1.0.1
