@@ -31,7 +31,7 @@ async def on_message(message):
         await client.send_message(message.channel, '()!프리맨에 대해서 #이 명령어를 쓰면 고든 프리맨이 누구인지 설명합니다')
         await client.send_message(message.channel, '()!모두 #이 명령어를 쓰면 전체를 호출합니다')
     if message.content.startswith('!모두'):
-    	roll = '@everyone {0.author.mention}고든의 빠루에 맞고싶지 않으면 이사람말을 들어야됩니다'.format(message)
+    	roll = '@everyone {0.author.mention}님이 여러분을 부릅니다!'.format(message)
     	await client.send_message(message.channel, roll)
     if message.content.startswith('ㅎㅇ'):
         await client.send_message(message.channel, ':regional_indicator_h: :regional_indicator_i:')
