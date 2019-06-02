@@ -45,19 +45,7 @@ async def on_message(message):
         await client.send_message(message.channel, '두눈으로 직접 봐')
     if message.content.startswith('킹갓'):
         await client.send_message(message.channel, '빠루')
-
- 
-                   
-
-
-      
-                
-            
-
-
         
-
-
 @client.event
 async def on_member_join(member):
     fmt = '#USER ID {0.mention} login, black mesa new Mexico'
