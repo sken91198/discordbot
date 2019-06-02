@@ -45,6 +45,23 @@ async def on_message(message):
         await client.send_message(message.channel, '두눈으로 직접 봐')
     if message.content.startswith('킹갓'):
         await client.send_message(message.channel, '빠루')
+    if "시발" in message.content:
+        file = openxl.load_workbook("경고.xlsx")
+        sheet = file.active
+        for i in range(1, 31):
+            if str(sheet["A" + str(i).value) == str(message.author.id):
+                sheet["B" + str(i)].value = int(sheet["B" + str(i)].value) + 1
+                if int (sheet["B" + str(i)]).value == 3
+                    await client.ban(message.author, 1)
+                break
+            if str(sheet["A" + str(i)].value == "-":
+                sheet["A" + str(i)].value = str(message.author.id)
+                sheet["B" + str(i)].value = 1
+                break
+        file.save("경고.xlsx")
+        await client.send_message(message.channel, "유저에 관환 예의는 지켜줍시다 #읽어주세요 을 읽어주세요")
+ 
+                   
 
 
       
