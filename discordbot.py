@@ -30,6 +30,7 @@ async def on_message(message):
         await client.send_message(message.channel, '()!소개 #이 명령어를 쓰면 고든프리맨이 자신에대해 설명합니다')
         await client.send_message(message.channel, '()!프리맨에 대해서 #이 명령어를 쓰면 고든 프리맨이 누구인지 설명합니다')
         await client.send_message(message.channel, '()!모두 #이 명령어를 쓰면 전체를 호출합니다')
+        await client.send_message(message.channel, '()!도움 #하프라이프2에 대한 도움말 명령어를 띄웁니다')
     if message.content.startswith('!모두'):
     	roll = '@everyone {0.author.mention}님이 여러분을 부릅니다!'.format(message)
     	await client.send_message(message.channel, roll)
@@ -45,6 +46,22 @@ async def on_message(message):
         await client.send_message(message.channel, '두눈으로 직접 봐')
     if message.content.startswith('킹갓'):
         await client.send_message(message.channel, '빠루')
+    if message.content.startswith('!도움'):
+        await client.send_message(message.channel, '()!빠루 #빠루가 무엇인지 설명해 드립니다')
+        await client.send_message(message.channel, '()!고든 프리맨 #고든 프리맨이 누구인지 설명해 드립니다(잘 알면서.....)')
+        await client.send_message(message.channel, '나무위키 밎 위키백과에 없으므로 버기는 빠졌습니다')
+        await client.send_message(message.channel, '나무위키 및 위키백과에 없으므로 에어보트는 빠졌습니다')
+        await client.send_message(message.channel, '나무위키 및 위키백과에 없으므로 에어보트는 빠졌습니다')
+        await client.send_message(message.channel, '()!반시민 #반시민이 뭔지 설명해 드립니다')
+    if message.content.startswith('!빠루'):
+        await client.send_message(message.channel, 'https://namu.wiki/w/%EC%87%A0%EC%A7%80%EB%A0%9B%EB%8C%80')
+    if message.content.startswith('!고든 프리맨'):
+        await client.send_message(message.channel, 'https://namu.wiki/w/%EA%B3%A0%EB%93%A0%20%ED%94%84%EB%A6%AC%EB%A7%A8')
+    if message.content.startswith('!반시민'):
+        await client.send_message(message.channel, '(위키백과)https://ko.wikipedia.org/wiki/%EB%B0%98%EC%8B%9C%EB%AF%BC')
+
+    
+    
         
 @client.event
 async def on_member_join(member):
