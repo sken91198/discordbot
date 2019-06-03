@@ -65,6 +65,13 @@ async def on_message(message):
         await client.send_message(message.channel, '1.asyncio 3.4.3')
         await client.send_message(message.channel, '2.discord.py 0.16.12')
         await client.send_message(message.channel, '3.openpyxl 2.6.2')
+    if message.content.startswith('!도배 시작'):
+        await client.send_message(message.channel, '하하하하하핳')
+    if message.content.startswith('하하하하하핳'):
+        await client.send_message(message.channel, '하하하하하핳')
+    if message.content.startswith('!도배 끝'):
+        await client.send_message(message.channel, '끄읕 고마 ')
+    
         
   
         
