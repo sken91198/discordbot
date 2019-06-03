@@ -59,6 +59,11 @@ async def on_message(message):
         await client.send_message(message.channel, 'https://namu.wiki/w/%EA%B3%A0%EB%93%A0%20%ED%94%84%EB%A6%AC%EB%A7%A8')
     if message.content.startswith('!반시민'):
         await client.send_message(message.channel, '(위키백과)https://ko.wikipedia.org/wiki/%EB%B0%98%EC%8B%9C%EB%AF%BC')
+    if message.content.startswith('!골라'):
+        gola = message.content.split(" ")
+        golab = random.randint(1, len(gola))
+        golac = gola[golab]
+        await client.send_message(message.channel, golac)
 
     
     
