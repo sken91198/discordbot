@@ -76,7 +76,7 @@ async def on_message(message):
             sheet["B" + str(i)].value = 1
             break
         file.save("경고.xlsx")
-        await client.send_message(message.channel, "{0.mention} 경고 사유:욕")
+        await client.send_message(message.channel, "{0.author.mention} 경고 사유:욕")
                 
 
         
