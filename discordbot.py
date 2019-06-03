@@ -51,7 +51,7 @@ async def on_message(message):
         await client.send_message(message.channel, '()!고든 프리맨 #고든 프리맨이 누구인지 설명해 드립니다(잘 알면서.....)')
         await client.send_message(message.channel, '나무위키 밎 위키백과에 없으므로 버기는 빠졌습니다')
         await client.send_message(message.channel, '나무위키 및 위키백과에 없으므로 에어보트는 빠졌습니다')
-        await client.send_message(message.channel, '나무위키 및 위키백과에 없으므로 에어보트는 빠졌습니다')
+        await client.send_message(message.channel, '나무위키 및 위키백과에 없으므로 콤바인은 빠졌습니다')
         await client.send_message(message.channel, '()!반시민 #반시민이 뭔지 설명해 드립니다')
     if message.content.startswith('!빠루'):
         await client.send_message(message.channel, 'https://namu.wiki/w/%EC%87%A0%EC%A7%80%EB%A0%9B%EB%8C%80')
@@ -59,11 +59,16 @@ async def on_message(message):
         await client.send_message(message.channel, 'https://namu.wiki/w/%EA%B3%A0%EB%93%A0%20%ED%94%84%EB%A6%AC%EB%A7%A8')
     if message.content.startswith('!반시민'):
         await client.send_message(message.channel, '(위키백과)https://ko.wikipedia.org/wiki/%EB%B0%98%EC%8B%9C%EB%AF%BC')
-    if message.content.startswith('!골라'):
-        gola = message.content.split(" ")
-        golab = random.randint(1, len(gola))
-        golac = gola[golab]
-        await client.send_message(message.channel, golac)
+    if message.content.startswith('!pip list'):
+        await client.send_message(message.channel, '임포트된 py파일:')
+        await client.send_message(message.channel, '1.asyncio 3.4.3')
+        await client.send_message(message.channel, '2.discord.py 0.16.12')
+        await client.send_message(message.channel, '3.openpyxl 2.6.2')
+        
+  
+        
+
+
 
     
     
