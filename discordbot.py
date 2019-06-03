@@ -65,6 +65,7 @@ async def on_message(message):
         await client.send_message(message.channel, '1.asyncio 3.4.3')
         await client.send_message(message.channel, '2.discord.py 0.16.12')
         await client.send_message(message.channel, '3.openpyxl 2.6.2')
+        
     if "욕" in message.content:
         file = openxl.load_workbook("경고.xlsx")
         sheet = file.active
