@@ -31,7 +31,7 @@ async def on_message(message):
         await client.send_message(message.channel, '()!프리맨에 대해서 #이 명령어를 쓰면 고든 프리맨이 누구인지 설명합니다')
         await client.send_message(message.channel, '()!모두 #이 명령어를 쓰면 전체를 호출합니다')
         await client.send_message(message.channel, '()!도움 #하프라이프2에 대한 도움말 명령어를 띄웁니다')
-        await client.send_message(message.channel, '()!pip list #봇에 임포트 되있는 py파일 목록을 ')
+        await client.send_message(message.channel, '()!pip list #봇에 임포트 되있는 py파일 목록을 띄웁니다')
     if message.content.startswith('!모두'):
     	roll = '@everyone {0.author.mention}님이 여러분을 부릅니다!'.format(message)
     	await client.send_message(message.channel, roll)
