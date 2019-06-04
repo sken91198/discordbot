@@ -66,18 +66,7 @@ async def on_message(message):
         await client.send_message(message.channel, '2.discord.py 0.16.12')
         await client.send_message(message.channel, '3.openpyxl 2.6.2')
         
-    if "욕" in message.content:
-        file = openxl.load_workbook("경고.xlsx")
-        sheet = file.active
-        for i range(1, 31):
-            if str(sheet["A" + str(i)].value) == str(message.author.id):
-                sheet["B" + str(i)].value = int(sheet["B" + str(i)].value) + 1
-                break
-            if str(sheet["A" + str(i)].value) == "-":
-            sheet["B" + str(i)].value = 1
-            break
-        file.save("경고.xlsx")
-        await client.send_message(message.channel, "{0.author.mention} 경고 사유:욕")
+
                 
 
         
