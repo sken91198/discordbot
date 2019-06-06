@@ -1,7 +1,6 @@
 import discord
 import asyncio
 import openpyxl
-improt random
 import os
 
 client = discord.Client()
