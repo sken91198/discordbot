@@ -68,12 +68,6 @@ async def on_message(message):
         await client.send_message(message.channel, '3.openpyxl 2.6.2')
         
     
-    if message.content.startswith('!골라'):
-        gola = message.content.split(" ")
-        golab = random.randint(1, len(gola))
-        golac = gola[golab]
-        await client.send_message(message.channel, golac)
-
 
         
 
