@@ -65,10 +65,10 @@ async def on_message(message):
         await client.send_message(message.channel, '1.asyncio 3.4.3')
         await client.send_message(message.channel, '2.discord.py 0.16.12')
         await client.send_message(message.channel, '3.openpyxl 2.6.2')
-    if message.content.startswith('욕'): /DM 433955132636397581 관리자님 {0.author.mention}이 욕을 사용했어요 
-        author = message.content[4:22} 
-        msg = message.content[23:]
-        await author.send(msg)
+    if message.content.startswith('욕'):
+        await client.send_message(message.channel, '@everyone  {0.author.mention}가 욕을 사용했읍니다 널리널리 알리세요^^')
+        
+
         
     
         
