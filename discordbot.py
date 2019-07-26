@@ -68,7 +68,7 @@ async def on_message(message):
     if message.content.startswith('욕'):
         await client.send_message(message.channel, '@everyone  {0.author.mention}가 욕을 사용했읍니다 널리널리 알리세요^^')
     if message.content.startwuth('!로그인')
-        await.client.send_message(message.channel, '{0.mention}, 로그인 되셨습니다')
+        await client.send_message(message.channel, '{0.mention}, 로그인 되셨습니다')
         
 
         
