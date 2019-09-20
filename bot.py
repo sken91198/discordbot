@@ -9,7 +9,7 @@ async def on_ready():
     print("로그인중")
     print("준비됨")
     game = discord.Game("명령어 준비됨")
-    await client.change_presence(status=discord.Status.online, activity=discord.Game(name="서준(봇관리자)#7777로 문의좀". format(len(client.guilds), len(client.users))))
+    await client.change_presence(status=discord.Status.online, activity=discord.Game(name="{user}명의 유저와 {server}개의 서버에서 함께하는중 ". format(len(client.guilds), len(client.users))))
     
 
 
